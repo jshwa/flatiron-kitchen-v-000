@@ -1,4 +1,12 @@
 FlatironKitchen::Application.routes.draw do
+  get 'ingredients/index'
+
+  get 'ingredients/show'
+
+  get 'ingredients/new'
+
+  get 'ingredients/edit'
+
   get 'recipe/index'
 
   get 'recipe/show'
