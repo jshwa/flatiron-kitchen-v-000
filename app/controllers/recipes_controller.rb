@@ -5,9 +5,6 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
-  def show
-  end
-
   def new
     @recipe = Recipe.new
   end
@@ -21,7 +18,8 @@ class RecipesController < ApplicationController
     end
   end
 
-  def edit
+  def update
+    
   end
 
   private
