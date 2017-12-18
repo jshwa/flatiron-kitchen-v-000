@@ -14,6 +14,12 @@ class RecipesController < ApplicationController
 
   def create
     raise params.inspect
+    @recipe = Recipe.new(recipe_params)
+    if @recipe.save
+      render 'show'
+    else
+      render 'new'
+    end
   end
 
   def edit
@@ -22,7 +28,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :ingredient)
+    params.require(:recipe).permit(:name, :ingredient_ids => [])
   end
 
   def set_recipe
