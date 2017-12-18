@@ -1,7 +1,7 @@
 FlatironKitchen::Application.routes.draw do
 
   resources :recipes
-  resources :ingredients  
+  resources :ingredients
 
 
   # The priority is based upon order of creation: first created -> highest priority.
