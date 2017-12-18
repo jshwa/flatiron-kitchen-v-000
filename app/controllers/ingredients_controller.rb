@@ -20,7 +20,7 @@ class IngredientsController < ApplicationController
     params.require(:ingredient).permit(:name, :recipe)
   end
 
-  def set_recipe
+  def set_ingredient
     @ingredient = Ingredient.find(params[:id])
   end
 end
