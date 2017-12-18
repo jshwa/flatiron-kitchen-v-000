@@ -12,6 +12,15 @@ class IngredientsController < ApplicationController
     @ingredient = Ingredient.new
   end
 
+  def create
+    @ingredient = Ingredient.new(ingredient_params)
+    if @ingredient.save
+      render 'show'
+    else
+      render 'new'
+    end
+  end
+
   def edit
   end
 
