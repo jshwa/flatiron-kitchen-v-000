@@ -21,7 +21,9 @@ class IngredientsController < ApplicationController
     end
   end
 
-  def edit
+  def update
+    @ingredient.update(ingredient_params)
+    render 'show'
   end
 
   private
