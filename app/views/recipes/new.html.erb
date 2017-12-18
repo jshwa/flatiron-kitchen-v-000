@@ -1,7 +1,3 @@
 <h1>Recipe#new,</h1>
-<%= form_for @recipe do |r| %>
-<%= r.label :name%>
-<%= r.text_field :name %>
 
-<%= r.submit %>
-<% end %>
+<%= render partial: 'form', locals: {recipe:@recipe} %>
