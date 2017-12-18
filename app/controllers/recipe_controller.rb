@@ -1,11 +1,11 @@
 class RecipeController < ApplicationController
-  def index,
+  def index
   end
 
-  def show,
+  def show
   end
 
-  def new,
+  def new
   end
 
   def edit
