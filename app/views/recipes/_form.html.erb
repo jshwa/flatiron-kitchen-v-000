@@ -2,9 +2,9 @@
 <%= r.label :name%>
 <%= r.text_field :name %>
 <br><br>
-<%= r.label :ingredients %>
+<%= r.label :ingredients %> <br>
 <%= r.collection_check_boxes(:ingredient_ids, Ingredient.all, :id, :name) do |i|%>
-  <%= i.check_box %><%= i.label %> <br> 
+  <%= i.check_box %> <%= i.label %> <br> 
 <% end %>
 <br><br>
 <%= r.submit %>
